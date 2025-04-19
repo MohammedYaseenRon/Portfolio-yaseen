@@ -23,7 +23,7 @@ export default function ProjectsSection() {
             title: "Talents Tracks",
             description: "TalentTrack is a full-stack job portal that enables recruiters to post jobs, schedule interviews, receive applications, and efficiently manage applicant details.",
             imageUrl: "/talent.png",
-            technologies: ["Next.js", "Node.js", "Postgres", "Prisma","Zustand","Tailwind CSS"],
+            technologies: ["Next.js", "Node.js","Typescript", "Postgres", "Prisma", "Zustand", "Tailwind CSS"],
             githubUrl: "https://github.com/MohammedYaseenRon/TalentTrack",
             liveUrl: "https://talent-track-liard.vercel.app/",
             icon: <Music className="w-6 h-6 text-purple-500" />,
@@ -33,9 +33,9 @@ export default function ProjectsSection() {
             id: 2,
             title: "Fitness Web Application",
             description: "Personalized workout plans, nutrition tracking, and progress monitoring for fitness enthusiasts.",
-            imageUrl: "/api/placeholder/600/400",
-            technologies: ["Next.js", "Typescripe","Postgres","MediaPipe","Gemini Api","Tailwind CSS", "ReChart"],
-            githubUrl: "https://github.com/MohammedYaseenRon/fitness-trakcer-app",
+            imageUrl: "/fit4you.png",
+            technologies: ["Next.js", "Typescript", "Postgres", "MediaPipe", "Gemini llm", "Tailwind CSS", "ReChart"],
+            githubUrl: "https://github.com/MohammedYaseenRon/fitness-trakcer-app.git",
             liveUrl: "https://fitness-app.example.com",
             icon: <Dumbbell className="w-6 h-6 text-blue-500" />,
             accentColor: "blue"
@@ -43,10 +43,10 @@ export default function ProjectsSection() {
         {
             id: 3,
             title: "Recruiter Hire Candidate",
-            description: "Streamlined hiring platform connecting recruiters with qualified candidates through AI-powered matching.",
-            imageUrl: "/api/placeholder/600/400",
-            technologies: ["React", "Express", "PostgreSQL", "Redux"],
-            githubUrl: "https://github.com/username/recruiter-app",
+            description: "Match candidates to job roles by scanning resumes based on skills and job descriptions.",
+            imageUrl: "/resume.png",
+            technologies: ["Next.js", "Python", "FastAPI", "TailwindCSS","Gemini llm"],
+            githubUrl: "https://github.com/MohammedYaseenRon/COHERENCE-25_CodeWizard_AIML.git",
             liveUrl: "https://recruiter-app.example.com",
             icon: <Users className="w-6 h-6 text-green-500" />,
             accentColor: "green"
@@ -105,7 +105,7 @@ export default function ProjectsSection() {
                     transition={{ duration: 0.7 }}
                 >                        {/* Left side - Projects heading */}
                     <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-teal-400">
-                       Projects
+                        Projects
                     </h2>
 
                     {/* Right side - Projects grid */}
@@ -128,6 +128,8 @@ export default function ProjectsSection() {
                                     >
                                         <div className="relative overflow-hidden aspect-video">
                                             <Image
+                                                width={400}
+                                                height={400}
                                                 src={project.imageUrl}
                                                 alt={project.title}
                                                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"

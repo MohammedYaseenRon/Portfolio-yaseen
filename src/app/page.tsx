@@ -12,9 +12,9 @@ export default function Home() {
     <div className="scroll-smooth">
       <Header />
       <AboutUs />
+      <Experience />
       <Projects />
       <Skills />
-      <Experience />
       <Contact />
       <Footer />
     </div>

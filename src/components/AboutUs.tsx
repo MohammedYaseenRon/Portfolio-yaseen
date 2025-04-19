@@ -34,6 +34,8 @@ export const AboutUs = () => {
                                     transition-all duration-500 group-hover:from-magenta group-hover:via-purple group-hover:to-teal">
                                     <Image
                                         src="/photos.jpg"
+                                        width={400}
+                                        height={400}
                                         alt="Jane Doe"
                                         className="w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-105"
                                     />
@@ -52,10 +54,10 @@ export const AboutUs = () => {
                         >
                             <div className="glass p-6 rounded-lg border border-white/10 hover:border-white/20 transition-all duration-300">
                                 <p className="text-lg mb-6 text-white">
-                                    Hey there! I&rsquo;m <span className="text-purple-400">Mohammed Yaseen Ron</span>, a passionate and detail-driven Fullstack Developer who loves crafting clean, efficient, and engaging digital experiences.
+                                    Hey there! I&rsquo;m <span className="text-purple-400">Mohammed Yaseen Ron</span>, a passionate Fullstack Developer who thrives on building clean, scalable, and impactful digital experiences. I love bringing ideas to life with code and delivering real value through technology.
                                 </p>
                                 <p className="text-lg mb-6 text-white">
-                                    I specialize in modern JavaScript frameworks like React, Next.js, and Node.js, and I’m dedicated to building high-performance, accessible, and visually striking web applications that leave a lasting impact.
+                                    I specialize in modern JavaScript frameworks like React, Next.js, and Node.js, and enjoy working across the entire stack to craft seamless, high-performance web applications. I’m also deeply curious about the world of AI/ML and love exploring how intelligent systems can enhance user experiences and solve real-world problems.
                                 </p>
 
 
@@ -73,9 +75,9 @@ export const AboutUs = () => {
                                         <div className="p-2 bg-white/20 rounded-full">
                                             <BookOpen className="text-blue-500" size={18} />
                                         </div>
-                                        <div>
+                                        <div className='mt-4'>
                                             <h4 className="font-medium text-white">Education</h4>
-                                            <p className="text-muted-foreground">B.Sc. Computer Science</p>
+                                            <p className="text-muted-foreground">BE Computer Science Engineering</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
