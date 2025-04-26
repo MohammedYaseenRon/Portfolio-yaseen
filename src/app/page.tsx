@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="scroll-smooth">
+    <main className="flex flex-col min-h-screen bg-black">
       <Header />
       <AboutUs />
       <Experience />
@@ -17,6 +17,6 @@ export default function Home() {
       <Skills />
       <Contact />
       <Footer />
-    </div>
+    </main>
   );
 }

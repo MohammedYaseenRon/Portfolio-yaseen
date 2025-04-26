@@ -10,7 +10,7 @@ export const AboutUs = () => {
   const isInView = useInView(ref, { once: true, amount: 0.3 })
 
   return (
-    <section id="aboutus" className="py-12 md:py-16 bg-[#0A0A0A] relative overflow-hidden">
+    <section id="aboutus" className="py-12 md:py-16 bg-[#0A0A0A] relative overflow-hidden p-2">
       <div>
         <div
           ref={ref}
