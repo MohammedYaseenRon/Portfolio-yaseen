@@ -1,30 +1,26 @@
-"use client"
-
-import Contact from "@/components/Contacts"
-import { AboutUs } from "../components/AboutUs"
-import Header from "../components/HeroSection"
-import Experience from "@/components/Experience"
-import Projects from "@/components/Projects"
-import Footer from "@/components/Footer"
-import Navbar from "@/components/Navbar"
-import Skills from "@/components/Skills"
+"use client";
+import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import Skills from "@/components/Skills";
+import HeroSection from "../components/HeroSection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full bg-[#0d0d0d] flex justify-center">
-      <div className="w-full md:w-[800px] flex flex-col border-x border-[#1e1e1e]">
-        <Navbar />
-        <div className="px-6">
-          <Header />
-          <Skills />
-          <AboutUs />
-          <Projects />
-          <Experience />
-          <Contact />
-          <Footer />
+    <div className="dark:bg-black">
+      <main className="mx-auto flex md:w-[800px] justify-center border relative dark:border-[#1e1e1e]">
+        <div className="min-h-screen w-full flex flex-col">
+          <Navbar />
+          <div>
+            <HeroSection />
+            <Skills />
+            <Projects />
+            <Experience />
+            <Footer />
+          </div>
         </div>
-
-      </div>
-    </main>
-  )
+      </main>
+    </div>
+  );
 }

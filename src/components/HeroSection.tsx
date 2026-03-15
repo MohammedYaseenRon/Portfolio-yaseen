@@ -1,21 +1,23 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Navbar from "./Navbar"
-import Image from "next/image"
+import { motion } from "framer-motion";
+import Navbar from "./Navbar";
+import Image from "next/image";
 
-const skills = [
-  "Python", "TensorFlow", "PyTorch", "React", "Next.js",
-  "TypeScript", "Node.js", "FastAPI", "Docker",
-  "PostgreSQL", "MongoDB", "AWS", "Git", "Tailwind CSS",
-]
 
 const socials = [
   {
     label: "Resume",
     href: "#",
     icon: (
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+      >
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
         <polyline points="14 2 14 8 20 8" />
         <line x1="16" y1="13" x2="8" y2="13" />
@@ -63,78 +65,89 @@ const socials = [
     label: "Email",
     href: "mailto:yaseen@example.com",
     icon: (
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+      >
         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
         <polyline points="22,6 12,13 2,6" />
       </svg>
     ),
   },
-]
+];
 
-const Header = () => {
+const HeroSection = () => {
   return (
-    <header className="bg-[#0d0d0d] min-h-screen text-[#e8e8e8] p-6">
-      <div className="max-w-2xl mx-auto px-6 py-12">
-        <motion.div
-          className="flex items-start gap-6 mb-8"
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <div className="w-[90px] h-[90px] rounded-xl overflow-hidden shrink-0 border border-[#2a2a2a]">
-            <div className="w-full h-full bg-gradient-to-br from-[#1a1a2e] to-[#16213e] flex items-center justify-center text-2xl font-bold text-[#06D6A0]">
-              MYR
+    <header className="pt-24 flex-1">
+      <div className="mx-auto flex flex-col w-full p-6 md:w-[700px] justify-center relative border-b border-[#1e1e1e]">
+          <motion.div
+            className="flex items-start gap-6 mb-8"
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="w-[90px] h-[90px] rounded-xl overflow-hidden shrink-0 border border-[#2a2a2a]">
+              <div className="w-full h-full bg-gradient-to-br from-[#1a1a2e] to-[#16213e] flex items-center justify-center text-2xl font-bold text-[#06D6A0]">
+                MYR
+              </div>
             </div>
-          </div>
 
-          <div className="pt-1">
-            <div className="flex items-center gap-2 mb-1">
-              <h1 className="font-serif text-lg md:text-4xl font-bold text-white tracking-tight">
-                Yaseen Ron
-              </h1>
-              <span className="text-[#555] font-mono text-sm">| 22, India</span>
+            <div className="pt-1">
+              <div className="flex items-center gap-2 mb-1">
+                <h1 className="font-serif text-lg md:text-4xl font-bold dark:text-white tracking-tight">
+                  Yaseen Ron
+                </h1>
+                <span className="text-[#555] font-mono text-sm">
+                  | 22, India
+                </span>
+              </div>
+              <p className="font-mono text-sm text-[#777]">
+                Frontend &amp; Full Stack Engineer
+              </p>
             </div>
-            <p className="font-mono text-sm text-[#777]">Frontend &amp; Full Stack Engineer</p>
-          </div>
-        </motion.div>
+          </motion.div>
 
-        <motion.div
-          className="mb-8"
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-        >
-          <p className="font-mono text-sm text-[#888] leading-relaxed">
-            A{" "}
-            <span className="text-[#e8e8e8] underline decoration-[#ca8a04] underline-offset-4">
-              Computer Science Engineer
-            </span>{" "}
-            building scalable AI systems today
-            <br />
-            clean, exploring machine learning frontiers tomorrow.
-          </p>
-        </motion.div>
+          <motion.div
+            className="mb-8"
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            <p className="font-mono text-sm text-[#888] leading-relaxed">
+              A{" "}
+              <span className="dark:text-[#e8e8e8] underline decoration-[#ca8a04] underline-offset-4">
+                Computer Science Engineer
+              </span>{" "}
+              building scalable AI systems today
+              <br />
+              clean, exploring machine learning frontiers tomorrow.
+            </p>
+          </motion.div>
 
-        <motion.div
-          className="flex items-center gap-3 mb-10 pb-8 border-b border-[#1e1e1e]"
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.15 }}
-        >
-          {socials.map((s) => (
-            <a
-              key={s.label}
-              href={s.href}
-              aria-label={s.label}
-              className="w-[38px] h-[38px] border border-[#2a2a2a] rounded-lg flex items-center justify-center text-[#666] transition-all hover:border-[#444] hover:text-[#e8e8e8]"
-            >
-              {s.icon}
-            </a>
-          ))}
-        </motion.div>
-      </div>
+          <motion.div
+            className="font-roboto flex items-center justify-start gap-3 mt-6"
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+          >
+            {socials.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                aria-label={s.label}
+                className="w-[38px] h-[38px] border border-[#2a2a2a] rounded-lg flex items-center justify-center text-[#666] transition-all hover:border-[#444] hover:text-[#e8e8e8]"
+              >
+                {s.icon}
+              </a>
+            ))}
+          </motion.div>
+        </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default HeroSection;

@@ -2,20 +2,27 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const skills = [
-  "Python",
-  "TensorFlow",
-  "PyTorch",
+  "Javascript",
+  "Typescript",
+  "Html",
+  "Css",
+  "Java",
   "React",
   "Next.js",
-  "TypeScript",
   "Node.js",
-  "FastAPI",
+  "Express.js",
+  "Restful API's",
+  "Zustand",
+  "Software Development Lifecycle(SDLC)",
+  "Agile",
+  "React Native",
+  "Tailwind Css",
   "Docker",
   "PostgreSQL",
   "MongoDB",
   "AWS",
   "Git",
-  "Tailwind CSS",
+  "Vps Hosting"
 ];
 
 const Skills = () => {
@@ -24,16 +31,17 @@ const Skills = () => {
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
+      className="mx-auto flex flex-col w-full p-6 md:w-[700px] justify-center relative border-b border-[#1e1e1e]"
     >
-      <h2 className="font-mono text-xl font-bold text-white mb-6">
+      <h2 className="font-mono text-xl font-bold dark:text-white mb-6">
         Skills <span className="text-[#555]">#</span>
       </h2>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 pt-6">
         {skills.map((skill) => (
           <span
             key={skill}
-            className="inline-flex items-center gap-2 font-mono text-xs px-3 py-2 border border-[#2a2a2a] rounded-lg text-[#aaa] transition-all cursor-default hover:border-[#444] hover:text-[#e8e8e8]"
+            className="cursor-pointer inline-flex items-center gap-2 border-1 md:border-2 border-dashed border-zinc-300 dark:border-neutral-700 md:rounded-sm rounded-sm bg-transparent px-2 md:px-2 py-1 md:py-1 md:text-sm text-xs text-zinc-900 dark:text-neutral-100 transition-all duration-300 hover:bg-zinc-100 dark:hover:bg-zinc-900"
           >
             {skill}
           </span>

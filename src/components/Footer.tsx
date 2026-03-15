@@ -3,66 +3,61 @@
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
-  return (
-    <footer className="py-4 px-4 md:px-12 bg-[#121212]">
-      <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="opacity-100 transition-opacity duration-500">
-            <p className="text-white text-sm md:text-base">
-              &copy; {currentYear} Mohammed Yaseen Ron. All Rights Reserved.
-            </p>
-          </div>
+  const socials = [
+    {
+      label: "GitHub",
+      href: "https://github.com/MohammedYaseenRon",
+      icon: (
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+      ),
+    },
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/yaseen-ron-36319b305",
+      icon: (
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </svg>
+      ),
+    },
+    {
+      label: "Twitter",
+      href: "https://x.com/YaseenRon",
+      icon: (
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+        </svg>
+      ),
+    },
+  ]
 
-          <div className="flex space-x-4 mt-4 md:mt-0">
+  return (
+    <footer className="mx-auto w-full p-6 md:w-[700px]">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2 pb-4">
+        {/* Left: name + year */}
+        <div className="flex items-center gap-2">
+          <span className="font-mono text-xs text-[#444]">©</span>
+          <span className="font-mono text-xs text-[#555]">{currentYear}</span>
+          <span className="font-mono text-xs text-[#444]">·</span>
+          <span className="font-mono text-xs text-[#555]">Mohammed Yaseen Ron</span>
+        </div>
+
+        {/* Right: social icons */}
+        <div className="flex items-center gap-2">
+          {socials.map((s) => (
             <a
-              href="https://github.com/MohammedYaseenRon"
-              className="bg-gray-900/40 w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-teal-200 hover:text-black transition-all duration-300 hover:scale-110 active:scale-90"
-              aria-label="GitHub"
+              key={s.label}
+              href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={s.label}
+              className="w-[34px] h-[34px] border border-[#2a2a2a] rounded-lg flex items-center justify-center text-[#555] transition-all hover:border-[#444] hover:text-[#e8e8e8]"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="text-white"
-                width="20"
-                height="20"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-              </svg>
+              {s.icon}
             </a>
-            <a
-              href="https://www.linkedin.com/in/yaseen-ron-36319b305"
-              className="bg-gray-900/40 w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-teal-200 hover:text-black transition-all duration-300 hover:scale-110 active:scale-90"
-              aria-label="LinkedIn"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="text-white"
-                width="20"
-                height="20"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-              </svg>
-            </a>
-            <a
-              href="https://x.com/YaseenRon"
-              className="bg-gray-900/40 w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-teal-200 hover:text-black transition-all duration-300 hover:scale-110 active:scale-90"
-              aria-label="Twitter/X"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="text-white"
-                width="20"
-                height="20"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-              </svg>
-            </a>
-          </div>
+          ))}
         </div>
       </div>
     </footer>
