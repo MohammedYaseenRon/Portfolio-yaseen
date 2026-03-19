@@ -6,6 +6,14 @@ import { BriefcaseBusiness, GraduationCap } from "lucide-react"
 
 const experiences = [
   {
+    title: "FullStack Developer Intern ",
+    company: "4AM Tech Private Limited",
+    period: "Nov2025 - Jan 2026",
+    description:
+      "Developed responsive web applications using React and Next.js. Collaborated with designers and backend developers to deliver high-quality products.",
+    type: "work",
+  },
+  {
     title: "Frontend Developer",
     company: "TechNSure Private Limited",
     period: "Nov 2024 - Jan 2025",

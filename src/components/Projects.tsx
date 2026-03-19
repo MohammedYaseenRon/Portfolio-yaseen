@@ -17,46 +17,37 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Talents Tracks",
+    title: "HireMe",
     description:
-      "TalentTrack is a full-stack job portal that enables recruiters to post jobs, schedule interviews, receive applications, and efficiently manage applicant details.",
-    technologies: ["Next.js", "Node.js", "TypeScript", "Postgres", "Prisma", "Zustand", "Tailwind CSS"],
-    githubUrl: "https://github.com/MohammedYaseenRon/TalentTrack",
-    liveUrl: "https://talent-track-liard.vercel.app/",
+      "HireMe is a full-stack technical hiring platform that enables recruiters to create and schedule coding challenges, review candidate submissions with live Sandpack previews, and get instant AI-powered evaluations with scoring, breakdowns, and feature analysis — all with a real-time leaderboard powered by Socket.io.",
+    technologies: ["Next.js", "Node.js", "TypeScript", "PostgreSQL", "Drizzle ORM", "Socket.io", "Sandpack", "Gemini AI", "Tailwind CSS", "Cloudinary"],
+    githubUrl: "https://github.com/MohammedYaseenRon/Talent_Arena.git",
   },
   {
     id: 2,
-    title: "Fitness Web Application",
+    title: "Market Place",
     description:
-      "Personalized workout plans, nutrition tracking, and progress monitoring for fitness enthusiasts. Pose detection with MediaPipe and AI-powered suggestions.",
+      "Built a marketplace where multiple vendors can list products, manage inventory, and process orders — with Razorpay checkout, role-gated dashboards for admins, vendors, and customers, and real-time cart sync.",
     technologies: ["Next.js", "TypeScript", "Postgres", "MediaPipe", "Gemini LLM", "Tailwind CSS", "ReChart"],
-    githubUrl: "https://github.com/MohammedYaseenRon/fitness-trakcer-app.git",
+    githubUrl: "https://github.com/MohammedYaseenRon/social-acc.git",
   },
   {
     id: 3,
-    title: "Recruiter Hire Candidate",
+    title: "Cityfix",
     description:
-      "Match candidates to job roles by scanning resumes based on skills and job descriptions using AI-powered analysis.",
-    technologies: ["Next.js", "Python", "FastAPI", "Tailwind CSS", "Gemini LLM"],
-    githubUrl: "https://github.com/MohammedYaseenRon/COHERENCE-25_CodeWizard_AIML.git",
-    liveUrl: "https://recruiter-app.example.com",
+      "Built a community platform for reporting local issues and tracking resolutions. Implemented features like project creation, voting, and collaborative mapping to support sustainability initiatives. Added a clan system for organizing events, managing members, and fundraising. Designed a public dashboard for transparency in issue tracking and civic participation.",
+    technologies: ["ReactNative", "Javscript", "Nodejs", "Tailwind CSS", "Zustand"],
+    githubUrl: "https://github.com/MohammedYaseenRon/social-acc.git",
   },
   {
     id: 4,
-    title: "AI Chat Assistant",
+    title: "Education Platform Landing Page",
     description:
-      "A context-aware conversational AI assistant built with RAG architecture. Supports document upload, semantic search, and multi-turn conversations.",
-    technologies: ["Next.js", "Python", "LangChain", "Pinecone", "OpenAI", "FastAPI"],
-    githubUrl: "https://github.com/MohammedYaseenRon/ai-chat",
-  },
-  {
-    id: 5,
-    title: "Dev Portfolio v1",
-    description:
-      "First iteration of personal portfolio built with vanilla React. Includes project showcase, skills section, and contact form with EmailJS integration.",
-    technologies: ["React", "CSS Modules", "EmailJS", "Vercel"],
-    githubUrl: "https://github.com/MohammedYaseenRon/portfolio-v1",
-    liveUrl: "https://portfolio-v1.vercel.app",
+      "Redesigned an education platform with a fast, responsive UI using Next.js, Tailwind CSS, and Framer Motion, improving performance and user experience.",
+    technologies: ["Next.js", "TailwindCss", "Framer motion"],
+    githubUrl: "https://github.com/MohammedYaseenRon/tuf-landing.git",
+    liveUrl: "https://tuf-landing-xi.vercel.app",
+
   },
 ]
 
