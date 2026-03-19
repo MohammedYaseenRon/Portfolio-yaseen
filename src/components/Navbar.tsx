@@ -5,11 +5,11 @@ import { Sun, Moon, Monitor } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
-  { name: "about", href: "#aboutus" },
+  // { name: "about", href: "#aboutus" },
   { name: "projects", href: "#projects" },
   { name: "skills", href: "#skills" },
   { name: "experience", href: "#experience" },
-  { name: "contact", href: "#contacts" },
+  // { name: "contact", href: "#contacts" },
 ]
 
 type Theme = "dark" | "light" | "system"

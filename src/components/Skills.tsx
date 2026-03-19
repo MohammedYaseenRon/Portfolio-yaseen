@@ -31,6 +31,7 @@ const Skills = () => {
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
+      id="skills"
       className="mx-auto flex flex-col w-full p-6 md:w-[700px] justify-center relative border-b border-[#1e1e1e]"
     >
       <h2 className="font-mono text-xl font-bold dark:text-white mb-6">
