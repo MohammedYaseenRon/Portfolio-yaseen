@@ -81,79 +81,95 @@ const socials = [
 const HeroSection = () => {
   return (
     <header className="pt-24 flex-1">
-      <div className="mx-auto flex flex-col w-full p-6 md:w-[700px] justify-center relative border-b border-[#1e1e1e]">
-          <motion.div
-            className="flex items-start gap-6 mb-8"
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="w-[90px] h-[90px] rounded-xl overflow-hidden shrink-0 border border-[#2a2a2a]">
-              <div className="w-full h-full bg-gradient-to-br from-[#1a1a2e] to-[#16213e] flex items-center justify-center text-2xl font-bold text-[#06D6A0]">
-                MYR
-              </div>
+      <div className="mx-auto flex flex-col w-full p-6 md:w-[700px] justify-center relative">
+        <motion.div
+          className="flex items-start gap-6 mb-8"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="pt-1">
+            <div className="flex items-center gap-2 mb-1">
+              <h1
+                className="text-lg sm:text-4xl lg:text-5xl font-bold dark:text-white tracking-tight"
+              >
+                Hi, Yaseen Ron
+              </h1>
+              <span className="text-[#555] font-mono text-sm">| 21, India</span>
             </div>
-
-            <div className="pt-1">
-              <div className="flex items-center gap-2 mb-1">
-                <h1 className="font-serif text-lg md:text-4xl font-bold dark:text-white tracking-tight">
-                  Yaseen Ron
-                </h1>
-                <span className="text-[#555] font-mono text-sm">
-                  | 22, India
-                </span>
-              </div>
-              <p className="font-mono text-sm text-[#777]">
-                Frontend &amp; Full Stack Engineer
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div
-            className="mb-8"
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
-            <p className="font-mono text-sm text-[#888] leading-relaxed">
-              A{" "}
-              <span className="dark:text-[#e8e8e8] underline decoration-[#ca8a04] underline-offset-4">
-                Computer Science Student
-              </span>{" "}
-              building scalable and user-focused web applications,
-              with a growing interest in machine learning and intelligent systems.
+            <p className="font-mono text-sm text-[#777] mt-2">
+              Frontend &amp; Full Stack Engineer
             </p>
-          </motion.div>
+          </div>
+        </motion.div>
 
-          <motion.div
-            className="font-roboto flex items-center justify-start gap-3 mt-6"
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.15 }}
-          >
-            <TooltipProvider>
-              {socials.map((s) => (
-                <Tooltip key={s.label}>
-                  <TooltipTrigger asChild>
-                    <a
-                      href={s.href}
-                      target={s.external ? "_blank" : "_self"}
-                      rel={s.external ? "noopener noreferrer" : ""}
-                      aria-label={s.label}
-                      className="w-[38px] h-[38px] border border-[#2a2a2a] rounded-lg flex items-center justify-center text-[#666] transition-all hover:border-[#444] hover:text-white"
-                    >
-                      {s.icon}
-                    </a>
-                  </TooltipTrigger>
+        <motion.div
+          className="mb-8"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
+          <p className="font-mono text-sm text-[#888] leading-relaxed">
+            I'm a{" "}
+            <span className="dark:text-[#e8e8e8] underline decoration-[#ca8a04] underline-offset-4">
+              Full Stack Developer
+            </span>{" "}
+            focused on building scalable, production-ready web applications with
+            modern technologies. I enjoy turning ideas into real products,
+            optimizing performance, and designing seamless user experiences. to
+            create smarter and more interactive systems.
+          </p>
+        </motion.div>
 
-                  <TooltipContent side="top">
-                    <p className="text-xs font-mono">{s.label}</p>
-                  </TooltipContent>
-                </Tooltip>
-              ))}
-            </TooltipProvider>
-          </motion.div>
-        </div>
+        <motion.div
+          className="mb-8"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
+          <span className="lg:text-2xl font-bold font-mono">About</span>
+          <p className="font-mono text-sm text-[#888] leading-relaxed">
+            I'm Yaseen Ron, a passionate Full Stack Developer focused on
+            building modern, scalable, and user-centric web applications. I
+            enjoy transforming ideas into real-world products that solve
+            meaningful problems and deliver seamless user experiences.
+            <br />
+            <br />
+            My goal is simple — to continuously learn, build impactful products,
+            and grow as a developer while contributing to innovative and
+            forward-thinking projects.
+          </p>
+        </motion.div>
+
+        <motion.div
+          className="font-roboto flex items-center justify-start gap-3 mt-6"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.15 }}
+        >
+          <TooltipProvider>
+            {socials.map((s) => (
+              <Tooltip key={s.label}>
+                <TooltipTrigger asChild>
+                  <a
+                    href={s.href}
+                    target={s.external ? "_blank" : "_self"}
+                    rel={s.external ? "noopener noreferrer" : ""}
+                    aria-label={s.label}
+                    className="w-[38px] h-[38px] border border-[#2a2a2a] rounded-lg flex items-center justify-center text-[#666] transition-all hover:border-[#444] hover:text-white"
+                  >
+                    {s.icon}
+                  </a>
+                </TooltipTrigger>
+
+                <TooltipContent side="top">
+                  <p className="text-xs font-mono">{s.label}</p>
+                </TooltipContent>
+              </Tooltip>
+            ))}
+          </TooltipProvider>
+        </motion.div>
+      </div>
     </header>
   );
 };
