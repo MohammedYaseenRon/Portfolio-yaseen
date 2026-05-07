@@ -10,7 +10,7 @@ const achievements = [
     description:
       "Ranked 3rd out of 60+ competing teams. Built a React Native + Node.js app under 24 hours — led the team, managed delivery, and shipped a working product end to end.",
     tags: ["React Native", "Node.js", "TypeScript", "MongoDB"],
-    github: null,
+    github: "https://github.com/Sumeet-2023/CityFix.git",
   },
   {
     title: "AI For Good Hackathon",
@@ -35,7 +35,7 @@ const achievements = [
     description:
       "Actively participated in several hackathons beyond placements — contributing technically, managing teammates, and learning how real teams operate under pressure and tight deadlines.",
     tags: ["Leadership", "Teamwork", "Fast-paced Execution"],
-    github: "https://github.com/Sumeet-2023/CityFix.git",
+    github: null,
   },
 ];
 
