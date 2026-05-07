@@ -8,7 +8,7 @@ const achievements = [
     result: "3rd Place · 60+ Teams",
     badge: "🥉",
     description:
-      "Ranked 3rd out of 60+ competing teams. Built a React Native + Node.js app under 24 hours — led the team, managed delivery, and shipped a working product end to end.",
+      "Secured 3rd place among 60+ competing teams. Collaborated with a team to develop a project addressing challenges related to SDG 11 (Sustainable Cities and Communities), contributing to development, problem-solving, and implementation throughout the hackathon.",
     tags: ["React Native", "Node.js", "TypeScript", "MongoDB"],
     github: "https://github.com/Sumeet-2023/CityFix.git",
   },
@@ -70,7 +70,7 @@ const AchievementsSection = () => {
               <div className="flex items-start justify-between gap-4 mb-2">
                 <div className="flex items-center gap-2">
                   <span className="text-base">{item.badge}</span>
-                  <span className="font-mono font-bold text-sm text-white">
+                  <span className="font-mono font-bold text-sm dark:text-white">
                     {item.title}
                   </span>
                 </div>
