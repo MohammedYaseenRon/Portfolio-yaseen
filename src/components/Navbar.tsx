@@ -47,7 +47,7 @@ const Navbar = () => {
 
   return (
     <nav className={cn("fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-[100vw] md:max-w-[750px] backdrop-blur-md h-20 z-40")}>
-      <div className="px-6 h-full flex items-center justify-between">
+      <div className="px-12 h-full flex items-center justify-between">
 
         <ul className="flex items-center gap-5 list-none m-0 p-0">
           {navLinks.map((link) => (

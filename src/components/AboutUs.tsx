@@ -66,11 +66,6 @@ export const AboutUs = () => {
             >
               <div className="glass p-6 rounded-lg border border-white/10 hover:border-white/20 transition-all duration-300">
                 <p className="text-lg mb-6 text-white">
-                  Hey there! I&rsquo;m <span className="text-purple-400">Mohammed Yaseen Ron</span>, a passionate
-                  Fullstack Developer who thrives on building clean, scalable, and impactful digital experiences. I love
-                  bringing ideas to life with code and delivering real value through technology.
-                </p>
-                <p className="text-lg mb-6 text-white">
                   I specialize in modern JavaScript frameworks like React, Next.js, and Node.js, and enjoy working
                   across the entire stack to craft seamless, high-performance web applications. I'm also deeply curious
                   about the world of AI/ML and love exploring how intelligent systems can enhance user experiences and

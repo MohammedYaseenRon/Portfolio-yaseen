@@ -38,7 +38,7 @@ const projects: Project[] = [
       "Multi-vendor marketplace with Razorpay checkout, role-gated dashboards for admins, vendors and customers, and real-time cart sync.",
     technologies: ["Next.js", "TypeScript", "Postgres", "Gemini LLM", "Tailwind CSS", "ReChart"],
     gradient: "from-[#1a0a2e] via-[#2d1b4e] to-[#1a0a2e]",
-    image: "/projects/marketplace.png",
+    image: "/vendor.jpeg",
     githubUrl: "https://github.com/MohammedYaseenRon/social-acc.git",
   },
   {
@@ -49,7 +49,7 @@ const projects: Project[] = [
       "Community platform for reporting local issues with voting, collaborative mapping, clan system for events and fundraising, and a public transparency dashboard.",
     technologies: ["React Native", "JavaScript", "Node.js", "Tailwind CSS", "Zustand"],
     gradient: "from-[#0a1a0d] via-[#0d2e1a] to-[#0a1a0d]",
-    image: "/projects/cityfix.png",
+    image: "/city.jpeg",
     githubUrl: "https://github.com/MohammedYaseenRon/social-acc.git",
   },
   {
@@ -60,7 +60,7 @@ const projects: Project[] = [
       "Redesigned education platform with a fast, responsive UI using Next.js, Tailwind CSS, and Framer Motion, improving performance and user experience.",
     technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
     gradient: "from-[#1a1200] via-[#2e2000] to-[#1a1200]",
-    image: "/projects/education.png",
+    image: "/edu.jpeg",
     githubUrl: "https://github.com/MohammedYaseenRon/tuf-landing.git",
     liveUrl: "https://tuf-landing-xi.vercel.app",
   },

@@ -11,7 +11,7 @@ import {
 const socials = [
   {
     label: "Resume",
-    href: "/Yaseen_FR01.pdf",
+    href: "/Yaseen_ron.pdf",
     external: true,
     icon: (
       <svg
@@ -102,25 +102,6 @@ const HeroSection = () => {
             </p>
           </div>
         </motion.div>
-
-        <motion.div
-          className="mb-8"
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-        >
-          <p className="font-mono text-sm text-[#888] leading-relaxed">
-            I'm a{" "}
-            <span className="dark:text-[#e8e8e8] underline decoration-[#ca8a04] underline-offset-4">
-              Full Stack Developer
-            </span>{" "}
-            focused on building scalable, production-ready web applications with
-            modern technologies. I enjoy turning ideas into real products,
-            optimizing performance, and designing seamless user experiences. to
-            create smarter and more interactive systems.
-          </p>
-        </motion.div>
-
         <motion.div
           className="mb-8"
           initial={{ opacity: 0, y: 12 }}
@@ -129,15 +110,8 @@ const HeroSection = () => {
         >
           <span className="lg:text-2xl font-bold font-mono">About</span>
           <p className="font-mono text-sm text-[#888] leading-relaxed">
-            I'm Yaseen Ron, a passionate Full Stack Developer focused on
-            building modern, scalable, and user-centric web applications. I
-            enjoy transforming ideas into real-world products that solve
-            meaningful problems and deliver seamless user experiences.
+            I'm Yaseen Ron, a final-year Computer Science student specializing in AI & ML, with a passion for building modern, scalable web applications. I enjoy turning ideas into real products — from a live coding assessment platform to a multi-vendor eCommerce app — and I'm always looking to learn new technologies along the way. My goal is to keep building things that solve real problems while growing as a developer.
             <br />
-            <br />
-            My goal is simple — to continuously learn, build impactful products,
-            and grow as a developer while contributing to innovative and
-            forward-thinking projects.
           </p>
         </motion.div>
 

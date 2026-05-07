@@ -7,6 +7,7 @@ import Skills from "@/components/Skills";
 import HeroSection from "../components/HeroSection";
 import Education from "@/components/Education";
 import ContactSection from "@/components/Contact";
+import AchievementsSection from "@/components/Achievements";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
             <Education />
             <Skills />
             <Projects />
+            <AchievementsSection />
             <ContactSection />
             <Footer />
           </div>
